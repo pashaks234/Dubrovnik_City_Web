@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Bitter', serif;
+    
+}
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    box-shadow: 0px 2px 0px 0px gray;
+}
+.navbar img{
+    width: 32px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    text-align: center;
+}
+.navbar a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navbar a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+.main{
+    background-image: url("dubrovnik.jpg");
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    
+
+}
+
+.title{
+    margin: 20px;
+    display: block;
+}
+.title h2{
+    text-align: center;
+    font-size: 40px;
+}
+.first{
+    font-family: 'Montserrat', sans-serif;
+    /* max-width: 1280px; */
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+}
+.learn-title{
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.button-title {
+    color: #fff;
+    border: 3px solid #449ff5;
+    background-image: -webkit-linear-gradient(30deg, #449ff5 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #449ff5 50%, transparent 50%);
+    background-size: 300%;
+    width: 156px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .button-title:hover {
+    background-position: 100%;
+    color: #fff;
+  }
+.row{
+    font-family: 'Bitter', serif;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.strike{
+    margin: 0 auto;
+    height: 1px;
+    flex-grow: 1;
+    background-color: gray;
+}
+.subtext p{
+    text-align: center;
+}
+.boxes{
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.box{
+    margin: 20px;
+    background-color: white;
+    /* border: 2px black solid; */
+    box-shadow: 2px 2px 2px 2px gray;
+    border-radius: 20px;
+    width: 256px;
+    height: 368px;
+}
+.boxtext{
+    margin: 6px;
+}
+.box img{
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    width: 100%;
+    height: 128px;
+}
+.button{
+    margin: 10%;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    /* margin: 20px; */
+    height: 30px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.btn-hover a{
+    color: white;
+    text-decoration: none;
+}
+.btn-hover:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.second{
+    padding-top: 10px;
+    /* max-width: 1280px; */
+    height: 120vh;
+    width: 100%;
+    background-color: beige;
+
+}
+.m1{
+    margin: 20px;
+    max-width: 1080px;
+    display: flex;
+}
+.m1text{
+    margin: 20px;
+}
+.m1-img img{
+    border-radius: 20px;
+    width: 422px;
+    height: 256px;
+}
+.m2{
+
+    margin: 20px;
+    float: right;
+    max-width: 1080px;
+    display: flex;
+    height: 100%;
+    
+}
+.m2text{
+    margin: 20px;
+    text-align: right;
+}
+.button-m12{
+    margin: 10%;
+    text-align: left;
+}
+.button-m22{
+    margin: 10%;
+    text-align: right;
+}
+.btn-hover-m12{
+    width: 220px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    /* margin: 20px; */
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover-m12:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover-m12.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+.footer{
+    background-color: rgb(41, 11, 148);
+    width: 100%;
+    height: 75vh;
+    color: white;
+}
+.footer h1{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.footer-content{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 32px;
+}
+.tengah{
+    display: block;
+}
+.tengah h4{
+    font-size: 40px;
+}
+.tengah p{
+    margin: 20px;
+    font-size: 26px;
+}
+.kiri{
+    max-width: 420px;
+}
+.kiri h4{
+    font-size: 40px;
+}
